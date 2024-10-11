@@ -16,13 +16,11 @@ void main() {
 // banking app class which is a stateless widget.
 // this defines the overall stucture of the app and the theme of the app
 class bankingApp extends StatelessWidget {
-  const bankingApp({super.key});
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Hoja Banking',
       theme: ThemeData(
         // This is the theme of your application.
         //
