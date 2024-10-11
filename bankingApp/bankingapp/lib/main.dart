@@ -1,11 +1,22 @@
 import 'package:flutter/material.dart';
 
+// import page for login,dashbord and register functionality.
+
+import 'package:bankingapp/pages/login.dart';
+import 'package:bankingapp/pages/dashbord.dart';
+import 'package:bankingapp/pages/register.dart';
+
+// main function is the entry point into the app.
+// it calls the runApp() method to start the bankingApp.
+
 void main() {
-  runApp(const MyApp());
+  runApp(bankingApp()); // starts the bankingApp widget.
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+// banking app class which is a stateless widget.
+// this defines the overall stucture of the app and the theme of the app
+class bankingApp extends StatelessWidget {
+  const bankingApp({super.key});
 
   // This widget is the root of your application.
   @override
