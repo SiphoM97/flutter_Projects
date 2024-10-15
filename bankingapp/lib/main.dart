@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 // import page for login,dashbord and register functionality.
 
-import 'package:pages/login.dart';
-import 'package:pages/dashbord.dart';
-import 'package:pages/register.dart';
+import 'package:bankingapp/pages/login.dart';
+import 'package:bankingapp/pages/dashboard.dart';
+import 'package:bankingapp/pages/register.dart';
 
 // main function is the entry point into the app.
 // it calls the runApp() method to start the bankingApp.
