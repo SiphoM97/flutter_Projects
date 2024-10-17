@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/login_screen.dart';
 import 'screens/home_screen.dart';
 import 'screens/salon_details_screen.dart';
 import 'screens/booking_screen.dart';
@@ -13,16 +14,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Salon Booking App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Color(0xFF363020), // Main color
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          secondary: Color(0xFF605C4E), // Secondary color
+        ),
       ),
-      home: HomeScreen(), // Initial route is the Home Screen
+      home: LoginScreen(),
       routes: {
+        '/home': (context) => HomeScreen(),
         '/salon-details': (context) => SalonDetailsScreen(),
         '/booking': (context) => BookingScreen(),
       },
     );
   }
 }
+
 
 
 /*

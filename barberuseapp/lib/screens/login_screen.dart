@@ -10,8 +10,7 @@ class LoginScreen extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(
-                    'assets/images/background.jpg'), // Path to your background image
+                image: AssetImage('assets/client3.jpg'), // Background image
                 fit: BoxFit.cover,
               ),
             ),
@@ -24,8 +23,9 @@ class LoginScreen extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(vertical: 20, horizontal: 24),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.8),
-                  borderRadius: BorderRadius.circular(12),
+                  color: Colors.transparent, // Keep the container transparent
+                  borderRadius: BorderRadius.circular(
+                      12), // Rounded edges for the container
                 ),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -34,7 +34,20 @@ class LoginScreen extends StatelessWidget {
                     TextField(
                       decoration: InputDecoration(
                         labelText: 'Email',
-                        border: OutlineInputBorder(),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(
+                              12), // Rounded edges for the TextField
+                          borderSide: BorderSide(
+                              color:
+                                  Color(0xFF605C4E)), // Optional: Border color
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(
+                              12), // Rounded edges for the enabled state
+                          borderSide: BorderSide(
+                              color:
+                                  Color(0xFF605C4E)), // Optional: Border color
+                        ),
                       ),
                       keyboardType: TextInputType.emailAddress,
                     ),
@@ -45,7 +58,20 @@ class LoginScreen extends StatelessWidget {
                       obscureText: true,
                       decoration: InputDecoration(
                         labelText: 'Password',
-                        border: OutlineInputBorder(),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(
+                              12), // Rounded edges for the TextField
+                          borderSide: BorderSide(
+                              color:
+                                  Color(0xFF605C4E)), // Optional: Border color
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(
+                              12), // Rounded edges for the enabled state
+                          borderSide: BorderSide(
+                              color:
+                                  Color(0xFF605C4E)), // Optional: Border color
+                        ),
                       ),
                     ),
                     SizedBox(height: 8),
@@ -61,7 +87,9 @@ class LoginScreen extends StatelessWidget {
                           },
                           child: Text(
                             'Forgot Password?',
-                            style: TextStyle(fontStyle: FontStyle.italic),
+                            style: TextStyle(
+                                fontStyle: FontStyle.italic,
+                                color: Color(0xFF605C4E)), // Secondary color
                           ),
                         ),
 
@@ -72,7 +100,9 @@ class LoginScreen extends StatelessWidget {
                           },
                           child: Text(
                             'Register as new user',
-                            style: TextStyle(fontStyle: FontStyle.italic),
+                            style: TextStyle(
+                                fontStyle: FontStyle.italic,
+                                color: Color(0xFF605C4E)), // Secondary color
                           ),
                         ),
                       ],
@@ -88,6 +118,8 @@ class LoginScreen extends StatelessWidget {
                       style: ElevatedButton.styleFrom(
                         minimumSize:
                             Size(double.infinity, 50), // Full-width button
+                        backgroundColor:
+                            Color(0xFF363020), // Main color for button
                       ),
                     ),
                   ],
