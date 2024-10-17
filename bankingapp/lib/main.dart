@@ -19,6 +19,7 @@ class bankingApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // material App is the root widget of the app.
     return MaterialApp(
       title: 'Hoja Banking',
       theme: ThemeData(
@@ -40,7 +41,7 @@ class bankingApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Hoja Pay'),
     );
   }
 }
