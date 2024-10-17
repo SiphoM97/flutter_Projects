@@ -23,3 +23,14 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+/*
+Color pallets for the app
+
+main color: #363020
+secondary color: #605C4E
+Third color: #A49966
+fourth color: #C7C7A6
+
+*/
