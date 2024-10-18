@@ -88,8 +88,10 @@ class LoginScreen extends StatelessWidget {
                           child: Text(
                             'Forgot Password?',
                             style: TextStyle(
-                                fontStyle: FontStyle.italic,
-                                color: Color(0xFF605C4E)), // Secondary color
+                              fontStyle: FontStyle.italic,
+                              color: Colors.black, // Change text color to black
+                              fontWeight: FontWeight.bold, // Make text bold
+                            ),
                           ),
                         ),
 
@@ -101,8 +103,10 @@ class LoginScreen extends StatelessWidget {
                           child: Text(
                             'Register as new user',
                             style: TextStyle(
-                                fontStyle: FontStyle.italic,
-                                color: Color(0xFF605C4E)), // Secondary color
+                              fontStyle: FontStyle.italic,
+                              color: Colors.black, // Change text color to black
+                              fontWeight: FontWeight.bold, // Make text bold
+                            ),
                           ),
                         ),
                       ],
@@ -114,12 +118,19 @@ class LoginScreen extends StatelessWidget {
                       onPressed: () {
                         // Login logic
                       },
-                      child: Text('Login'),
+                      child: Text(
+                        'Login',
+                        style: TextStyle(
+                          color:
+                              Colors.black, // Change login text color to black
+                          fontWeight: FontWeight.bold, // Make text bold
+                        ),
+                      ),
                       style: ElevatedButton.styleFrom(
                         minimumSize:
                             Size(double.infinity, 50), // Full-width button
                         backgroundColor:
-                            Color(0xFF363020), // Main color for button
+                            Color(0xFF363020), // Original button color
                       ),
                     ),
                   ],
