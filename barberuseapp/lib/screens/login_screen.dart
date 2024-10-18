@@ -124,6 +124,8 @@ class LoginScreen extends StatelessWidget {
                           color:
                               Colors.black, // Change login text color to black
                           fontWeight: FontWeight.bold, // Make text bold
+                          fontSize:
+                              18, // Increased font size by 4px (14px + 4px)
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
