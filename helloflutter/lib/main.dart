@@ -48,10 +48,10 @@ class MyApp extends StatelessWidget {
                         color: Colors.black,
                         borderRadius: BorderRadius.circular(20)),
                     child: Row(
-                      children: const [
+                      children: [
                         Text("Image", style: TextStyle(color: Colors.white)),
                         SizedBox(
-                          width: 20,
+                          height: 20,
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
