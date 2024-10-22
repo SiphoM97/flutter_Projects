@@ -25,15 +25,48 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text("Welcome to Hello flutter App"),
+                  Text(
+                    "Welcome to Hello flutter App",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                   Column(
                     children: [
                       Text("Image "),
                       SizedBox(height: 20),
-                      Text("This App is developed by Sipho"),
+                      Text(
+                        "This App is developed by Sipho",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                     ],
                   ),
-                  Text("3rd Children"),
+                  Container(
+                    padding: EdgeInsets.all(10),
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(20)),
+                    child: Row(
+                      children: [
+                        Text("Image", style: TextStyle(color: Colors.white)),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Sipho",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            Text("founder",
+                                style: TextStyle(color: Colors.white)),
+                            Text("LImitlessBytes",
+                                style: TextStyle(color: Colors.white)),
+                          ],
+                        ),
+                      ],
+                    ),
+                  )
                 ],
               ))),
     );
