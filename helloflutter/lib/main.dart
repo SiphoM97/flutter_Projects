@@ -5,6 +5,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,7 +32,7 @@ class MyApp extends StatelessWidget {
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   Column(
-                    children: [
+                    children: const [
                       Text("Image "),
                       SizedBox(height: 20),
                       Text(
@@ -46,7 +48,7 @@ class MyApp extends StatelessWidget {
                         color: Colors.black,
                         borderRadius: BorderRadius.circular(20)),
                     child: Row(
-                      children: [
+                      children: const [
                         Text("Image", style: TextStyle(color: Colors.white)),
                         SizedBox(
                           width: 20,
@@ -56,7 +58,9 @@ class MyApp extends StatelessWidget {
                           children: [
                             Text(
                               "Sipho",
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
                             ),
                             Text("founder",
                                 style: TextStyle(color: Colors.white)),
