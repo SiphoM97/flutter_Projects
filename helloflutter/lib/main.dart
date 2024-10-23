@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20)),
                     child: Row(
                       children: [
-                        Text("Image", style: TextStyle(color: Colors.white)),
+                        Image.asset("assets/images/flutter_icon.png"),
                         SizedBox(
                           height: 20,
                         ),
