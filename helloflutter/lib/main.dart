@@ -48,10 +48,10 @@ class MyApp extends StatelessWidget {
                         color: Colors.black,
                         borderRadius: BorderRadius.circular(20)),
                     child: Row(
-                      children: [
-                        Image.asset("assets/images/flutter_icon.png"),
+                      children: const [
+                        Text("Image", style: TextStyle(color: Colors.white)),
                         SizedBox(
-                          height: 20,
+                          width: 20,
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
