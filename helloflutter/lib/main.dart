@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: Colors.blue[900],
             centerTitle: true,
-            title: Text("Hello Flutter!"),
+            title: Text("Avatar The Last airbender!"),
           ),
           body: Container(
               padding: EdgeInsets.all(20),
@@ -28,16 +28,16 @@ class MyApp extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    "Welcome to Hello flutter App",
+                    "Water bending",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   Column(
                     children: [
-                      Image.asset("assets/images/flutter_icon.png",
-                          height: 100),
+                      Image.network(
+                          "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b61c488d-15ea-4c50-ad98-8770a9654c84/dhdrd2h-d3001f20-b07f-45da-b92e-796dbd73b59a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2MWM0ODhkLTE1ZWEtNGM1MC1hZDk4LTg3NzBhOTY1NGM4NFwvZGhkcmQyaC1kMzAwMWYyMC1iMDdmLTQ1ZGEtYjkyZS03OTZkYmQ3M2I1OWEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Kxck_z6f1H0zxt5uETiw2PGkqhvvp8_HzLwvD8_2RJE"),
                       SizedBox(height: 20),
                       Text(
-                        "This App is developed by Sipho",
+                        "Kitara",
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                     ],
@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
                     child: Row(
                       children: [
                         Image.network(
-                          "https://cdni.iconscout.com/illustration/premium/thumb/avatar-feminino-8187688-6590630.png?f=webp",
+                          "https://upload.wikimedia.org/wikipedia/en/8/86/Avatar_Aang.png",
                           height: 50,
                         ),
                         SizedBox(
