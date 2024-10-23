@@ -33,7 +33,8 @@ class MyApp extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      Image.asset("assets/images/flutter_icon.png"),
+                      Image.asset("assets/images/flutter_icon.png",
+                          height: 100),
                       SizedBox(height: 20),
                       Text(
                         "This App is developed by Sipho",
@@ -48,8 +49,11 @@ class MyApp extends StatelessWidget {
                         color: Colors.black,
                         borderRadius: BorderRadius.circular(20)),
                     child: Row(
-                      children: const [
-                        Text("Image", style: TextStyle(color: Colors.white)),
+                      children: [
+                        Image.network(
+                          "https://cdni.iconscout.com/illustration/premium/thumb/avatar-feminino-8187688-6590630.png?f=webp",
+                          height: 50,
+                        ),
                         SizedBox(
                           width: 20,
                         ),
