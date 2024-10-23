@@ -32,8 +32,8 @@ class MyApp extends StatelessWidget {
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   Column(
-                    children: const [
-                      Text("Image "),
+                    children: [
+                      Image.asset("assets/images/flutter_icon.png"),
                       SizedBox(height: 20),
                       Text(
                         "This App is developed by Sipho",
