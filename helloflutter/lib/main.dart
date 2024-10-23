@@ -14,7 +14,10 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: Colors.blue[900],
             centerTitle: true,
-            title: Text("Avatar The Last airbender!"),
+            title: Text(
+              "Avatar The Last airbender!",
+              style: TextStyle(fontFamily: "AvatarAirbender", fontSize: 32),
+            ),
           ),
           body: Container(
               padding: EdgeInsets.all(20),
