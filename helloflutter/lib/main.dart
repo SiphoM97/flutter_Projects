@@ -12,11 +12,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
-            backgroundColor: Colors.blue[900],
+            backgroundColor: Colors.black,
             centerTitle: true,
             title: Text(
               "Avatar The Last airbender!",
-              style: TextStyle(fontFamily: "AvatarAirbender", fontSize: 32),
+              style: TextStyle(
+                  fontFamily: "AvatarAirbender",
+                  fontSize: 32,
+                  color: Colors.white),
             ),
           ),
           body: Container(
@@ -32,7 +35,9 @@ class MyApp extends StatelessWidget {
                 children: [
                   Text(
                     "Water bending",
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontFamily: "Poppins-Bold"),
                   ),
                   Column(
                     children: [
@@ -41,7 +46,8 @@ class MyApp extends StatelessWidget {
                       SizedBox(height: 20),
                       Text(
                         "Kitara",
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                            fontFamily: "AvatarAirbender", fontSize: 40),
                       ),
                     ],
                   ),
@@ -58,23 +64,53 @@ class MyApp extends StatelessWidget {
                           height: 50,
                         ),
                         SizedBox(
-                          width: 20,
+                          width: 30,
                         ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Text(
-                              "Sipho",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Physical Ability",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Text(
+                                  "Mental Ability",
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                Text(
+                                  "Spiritual Ability",
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                              ],
                             ),
-                            Text("founder",
-                                style: TextStyle(color: Colors.white)),
-                            Text("LImitlessBytes",
-                                style: TextStyle(color: Colors.white)),
+                            SizedBox(
+                                width: 20), // Add padding between the columns
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Text(
+                                  "45%",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Text(
+                                  "50%",
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                Text(
+                                  "60%",
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                              ],
+                            ),
                           ],
-                        ),
+                        )
                       ],
                     ),
                   )
