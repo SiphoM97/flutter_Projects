@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:helloflutter/child_one.dart';
+import 'package:helloflutter/child_three.dart';
+import 'package:helloflutter/child_two.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget {
               "Avatar The Last airbender!",
               style: TextStyle(
                   fontFamily: "AvatarAirbender",
-                  fontSize: 32,
+                  fontSize: 35,
                   color: Colors.white),
             ),
           ),
@@ -33,12 +36,9 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text(
-                    "Water bending",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontFamily: "Poppins-Bold"),
-                  ),
+                  ChildOne(),
+                  ChildTwo(),
+                  ChildThree(),
                   Column(
                     children: [
                       Image.network(
