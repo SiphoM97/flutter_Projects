@@ -31,14 +31,17 @@ class ChildThree extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
+                  SizedBox(height: 3),
                   Text(
                     "Mental Ability",
                     style: TextStyle(color: Colors.white),
                   ),
+                  SizedBox(height: 3),
                   Text(
                     "Spiritual Ability",
                     style: TextStyle(color: Colors.white),
                   ),
+                  SizedBox(height: 3),
                 ],
               ),
               SizedBox(width: 20), // Add padding between the columns
@@ -51,14 +54,17 @@ class ChildThree extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
+                  SizedBox(height: 3),
                   Text(
                     "50%",
                     style: TextStyle(color: Colors.white),
                   ),
+                  SizedBox(height: 3),
                   Text(
                     "60%",
                     style: TextStyle(color: Colors.white),
                   ),
+                  SizedBox(height: 3),
                 ],
               ),
             ],
