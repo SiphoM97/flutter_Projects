@@ -16,6 +16,14 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           title: Text("Billionaire App"),
         ),
+        body: Container(
+          color: Colors.blueGrey[700],
+          height: double.infinity,
+          width: double.infinity,
+          child: Column(
+            children: [Text("Balance part"), Text("Button part")],
+          ),
+        ),
       ),
     );
   }
