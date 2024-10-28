@@ -170,10 +170,10 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2024-10-24T06:03:51.943037Z",
+  "generated": "2024-10-26T17:55:18.238157Z",
   "generator": "pub",
-  "generatorVersion": "3.5.3",
+  "generatorVersion": "3.5.4",
   "flutterRoot": "file:///Users/siphosetumzayiya/Downloads/flutter",
-  "flutterVersion": "3.24.3",
+  "flutterVersion": "3.24.4",
   "pubCache": "file:///Users/siphosetumzayiya/.pub-cache"
 }
