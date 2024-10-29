@@ -63,6 +63,8 @@ class _MyAppState extends State<MyApp> {
                       height: 20,
                     ),
                     Text("$balance"),
+                    OutlinedButton(
+                        onPressed: loadBalance, child: Text("Load Balance!"))
                   ],
                 ),
               ),
