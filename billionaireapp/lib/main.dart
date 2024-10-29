@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,12 +16,24 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   double balance = 0;
 
-  void addMoney() {
+  void addMoney() async {
     setState(() {
       balance = balance + 500;
     });
 
     print(balance);
+
+    // Obtain shared preferences.
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setDouble('balance ', balance);
+  }
+
+  void loadBalance() async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+
+    setState(() {
+      balance = prefs.getDouble('balance ') ?? 0;
+    });
   }
 
   @override
