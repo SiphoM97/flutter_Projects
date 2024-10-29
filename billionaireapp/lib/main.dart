@@ -13,8 +13,14 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  void aFunction() {
-    print("Button is pressed!");
+  double balance = 0;
+
+  void addMoney() {
+    setState(() {
+      balance = balance + 500;
+    });
+
+    print(balance);
   }
 
   @override
@@ -43,7 +49,7 @@ class _MyAppState extends State<MyApp> {
                     SizedBox(
                       height: 20,
                     ),
-                    Text("0"),
+                    Text("$balance"),
                   ],
                 ),
               ),
@@ -53,7 +59,7 @@ class _MyAppState extends State<MyApp> {
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.red[700],
                           minimumSize: Size(double.infinity, 0)),
-                      onPressed: aFunction,
+                      onPressed: addMoney,
                       child: Text("Add Money!")))
             ],
           ),
