@@ -23,7 +23,6 @@ class _MyAppState extends State<MyApp> {
 
     print(balance);
 
-    // Obtain shared preferences.
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setDouble('balance ', balance);
   }
