@@ -18,6 +18,7 @@ class _MainscreenState extends State<Mainscreen> {
           Icon(
             Icons.add,
             color: Colors.red,
+            size: 45,
           )
         ],
       ),
