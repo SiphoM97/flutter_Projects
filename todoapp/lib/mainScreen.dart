@@ -11,14 +11,23 @@ class _MainscreenState extends State<Mainscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: Text("Drawer data"),
+      ),
       appBar: AppBar(
         centerTitle: true,
         title: Text("ToDo App"),
         actions: [
-          Icon(
-            Icons.add,
-            color: Colors.red,
-            size: 45,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: GestureDetector(
+              onTap: () {
+                print("The plus icon is clicked");
+              },
+              child: Icon(
+                Icons.add,
+              ),
+            ),
           )
         ],
       ),
