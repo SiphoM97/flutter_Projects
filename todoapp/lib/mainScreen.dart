@@ -14,6 +14,12 @@ class _MainscreenState extends State<Mainscreen> {
       appBar: AppBar(
         centerTitle: true,
         title: Text("ToDo App"),
+        actions: [
+          Icon(
+            Icons.add,
+            color: Colors.red,
+          )
+        ],
       ),
     );
   }
