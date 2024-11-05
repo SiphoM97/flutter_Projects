@@ -55,7 +55,9 @@ class _MainscreenState extends State<Mainscreen> {
         body: ListView.builder(
             itemCount: toDoList.length,
             itemBuilder: (BuildContext context, int index) {
-              return Text(toDoList[index]);
+              return ListTile(
+                title: Text(toDoList[index]),
+              );
             }));
   }
 }
