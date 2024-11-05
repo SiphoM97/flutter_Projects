@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Addtodo extends StatefulWidget {
-  const Addtodo({super.key});
+class AddToDo extends StatefulWidget {
+
+  void Function() changeText; 
+  AddToDo({super.key required this.changeText});
 
   @override
-  State<Addtodo> createState() => _AddtodoState();
+  State<AddToDo> createState() => _AddtodoState();
 }
 
-class _AddtodoState extends State<Addtodo> {
+class _AddtodoState extends State<AddToDo> {
   TextEditingController todoText = TextEditingController();
   @override
   Widget build(BuildContext context) {
@@ -25,6 +27,7 @@ class _AddtodoState extends State<Addtodo> {
             onPressed: () {
               print(todoText.text);
               todoText.text = "";
+              widget.changeText();
             },
             child: Text("Add"))
       ],

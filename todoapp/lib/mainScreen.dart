@@ -9,6 +9,13 @@ class Mainscreen extends StatefulWidget {
 }
 
 class _MainscreenState extends State<Mainscreen> {
+  String text = "Simple Text!";
+  void changeText() {
+    setState(() {
+      text = "Hello world";
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +33,9 @@ class _MainscreenState extends State<Mainscreen> {
                   context: context,
                   builder: (context) {
                     return Container(
-                      height: 250,
+                      padding: EdgeInsets.all(20),
+                      height: 200,
+                      child: AddToDo(changeText: changeText),
                     );
                   });
             },
@@ -39,7 +48,9 @@ class _MainscreenState extends State<Mainscreen> {
           )
         ],
       ),
-      body: Addtodo(),
+      body: Container(
+        child: Text("$text"),
+      ),
     );
   }
 }
