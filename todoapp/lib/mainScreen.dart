@@ -10,9 +10,10 @@ class Mainscreen extends StatefulWidget {
 
 class _MainscreenState extends State<Mainscreen> {
   String text = "Simple Text!";
-  void changeText() {
+  List<String> toDoList = ["Code", "Eat", "Sleep", "Repeat"];
+  void changeText({required String toDoText}) {
     setState(() {
-      text = "Hello world";
+      text = "$toDoText";
     });
   }
 
@@ -32,10 +33,13 @@ class _MainscreenState extends State<Mainscreen> {
               showModalBottomSheet(
                   context: context,
                   builder: (context) {
-                    return Container(
-                      padding: EdgeInsets.all(20),
-                      height: 200,
-                      child: AddToDo(changeText: changeText),
+                    return Padding(
+                      padding: MediaQuery.of(context).viewInsets,
+                      child: Container(
+                        padding: EdgeInsets.all(20),
+                        height: 200,
+                        child: AddToDo(changeText: changeText),
+                      ),
                     );
                   });
             },
