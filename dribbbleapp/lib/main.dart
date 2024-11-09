@@ -12,8 +12,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.black,
           centerTitle: true,
-          title: Text("Designer App"),
+          title: Text(
+            "Limitless Bytes",
+            style: TextStyle(color: Colors.white),
+          ),
         ),
       ),
     );
