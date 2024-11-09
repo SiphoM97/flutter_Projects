@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           title: Text(
             "Limitless Bytes",
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           ),
         ),
       ),
