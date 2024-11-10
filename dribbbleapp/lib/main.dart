@@ -21,12 +21,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Container(
           padding: EdgeInsets.all(20),
-          margin: EdgeInsets.only(
-            top: 10,
-            left: 10,
-            right: 10,
-            bottom: 10,
-          ),
+          margin: EdgeInsets.all(20),
           child: Text(
             "Meal one",
             style: TextStyle(color: Colors.white),
