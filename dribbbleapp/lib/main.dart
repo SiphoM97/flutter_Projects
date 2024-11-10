@@ -25,10 +25,14 @@ class MyApp extends StatelessWidget {
             top: 10,
             left: 10,
           ),
-          child: Text("Test Text!"),
+          child: Text(
+            "Meal one",
+            style: TextStyle(color: Colors.white),
+          ),
           height: 100,
           width: 100,
-          color: Colors.amber,
+          decoration: BoxDecoration(
+              color: Colors.black, borderRadius: BorderRadius.circular(10)),
         ),
       ),
     );
