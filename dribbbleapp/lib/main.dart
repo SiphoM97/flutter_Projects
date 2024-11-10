@@ -19,17 +19,46 @@ class MyApp extends StatelessWidget {
             style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           ),
         ),
-        body: Container(
-          padding: EdgeInsets.all(20),
-          margin: EdgeInsets.all(20),
-          child: Text(
-            "Meal one",
-            style: TextStyle(color: Colors.white),
-          ),
-          height: double.infinity,
-          width: double.infinity,
-          decoration: BoxDecoration(
-              color: Colors.black, borderRadius: BorderRadius.circular(10)),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Container(
+              padding: EdgeInsets.all(20),
+              margin: EdgeInsets.all(10),
+              child: Text(
+                "Meal one",
+                style: TextStyle(color: Colors.white),
+              ),
+              height: 200,
+              width: 200,
+              decoration: BoxDecoration(
+                  color: Colors.black, borderRadius: BorderRadius.circular(10)),
+            ),
+            Container(
+              padding: EdgeInsets.all(20),
+              margin: EdgeInsets.all(10),
+              child: Text(
+                "Meal two",
+                style: TextStyle(color: Colors.white),
+              ),
+              height: 200,
+              width: 200,
+              decoration: BoxDecoration(
+                  color: Colors.black, borderRadius: BorderRadius.circular(10)),
+            ),
+            Container(
+              padding: EdgeInsets.all(20),
+              margin: EdgeInsets.all(10),
+              child: Text(
+                "Meal three",
+                style: TextStyle(color: Colors.white),
+              ),
+              height: 200,
+              width: 200,
+              decoration: BoxDecoration(
+                  color: Colors.black, borderRadius: BorderRadius.circular(10)),
+            ),
+          ],
         ),
       ),
     );
