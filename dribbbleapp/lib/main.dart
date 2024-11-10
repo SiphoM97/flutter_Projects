@@ -24,13 +24,15 @@ class MyApp extends StatelessWidget {
           margin: EdgeInsets.only(
             top: 10,
             left: 10,
+            right: 10,
+            bottom: 10,
           ),
           child: Text(
             "Meal one",
             style: TextStyle(color: Colors.white),
           ),
-          height: 100,
-          width: 100,
+          height: double.infinity,
+          width: double.infinity,
           decoration: BoxDecoration(
               color: Colors.black, borderRadius: BorderRadius.circular(10)),
         ),
