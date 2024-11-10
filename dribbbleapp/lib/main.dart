@@ -29,8 +29,8 @@ class MyApp extends StatelessWidget {
                 "Meal one",
                 style: TextStyle(color: Colors.white),
               ),
-              height: 200,
-              width: 200,
+              height: 130,
+              width: 130,
               decoration: BoxDecoration(
                   color: Colors.black, borderRadius: BorderRadius.circular(10)),
             ),
@@ -41,8 +41,8 @@ class MyApp extends StatelessWidget {
                 "Meal two",
                 style: TextStyle(color: Colors.white),
               ),
-              height: 200,
-              width: 200,
+              height: 130,
+              width: 130,
               decoration: BoxDecoration(
                   color: Colors.black, borderRadius: BorderRadius.circular(10)),
             ),
@@ -53,8 +53,8 @@ class MyApp extends StatelessWidget {
                 "Meal three",
                 style: TextStyle(color: Colors.white),
               ),
-              height: 200,
-              width: 200,
+              height: 130,
+              width: 130,
               decoration: BoxDecoration(
                   color: Colors.black, borderRadius: BorderRadius.circular(10)),
             ),
