@@ -23,10 +23,11 @@ class MyApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   padding: EdgeInsets.all(20),
-                  margin: EdgeInsets.all(10),
+                  margin: EdgeInsets.all(20),
                   child: Text(
                     "Meal one",
                     style: TextStyle(color: Colors.white),
@@ -39,9 +40,9 @@ class MyApp extends StatelessWidget {
                 ),
                 Container(
                   padding: EdgeInsets.all(20),
-                  margin: EdgeInsets.all(10),
+                  margin: EdgeInsets.all(20),
                   child: Text(
-                    "Meal three",
+                    "Meal two",
                     style: TextStyle(color: Colors.white),
                   ),
                   height: 170,
