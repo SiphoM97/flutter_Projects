@@ -22,29 +22,35 @@ class MyApp extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Container(
-              padding: EdgeInsets.all(20),
-              margin: EdgeInsets.all(10),
-              child: Text(
-                "Meal one",
-                style: TextStyle(color: Colors.white),
-              ),
-              height: 130,
-              width: 130,
-              decoration: BoxDecoration(
-                  color: Colors.black, borderRadius: BorderRadius.circular(10)),
-            ),
-            Container(
-              padding: EdgeInsets.all(20),
-              margin: EdgeInsets.all(10),
-              child: Text(
-                "Meal three",
-                style: TextStyle(color: Colors.white),
-              ),
-              height: 150,
-              width: 150,
-              decoration: BoxDecoration(
-                  color: Colors.black, borderRadius: BorderRadius.circular(10)),
+            Row(
+              children: [
+                Container(
+                  padding: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
+                  child: Text(
+                    "Meal one",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  height: 170,
+                  width: 170,
+                  decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(10)),
+                ),
+                Container(
+                  padding: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
+                  child: Text(
+                    "Meal three",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  height: 170,
+                  width: 170,
+                  decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(10)),
+                ),
+              ],
             ),
           ],
         ),
