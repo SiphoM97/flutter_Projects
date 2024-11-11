@@ -53,8 +53,8 @@ class MyApp extends StatelessWidget {
                 "Meal three",
                 style: TextStyle(color: Colors.white),
               ),
-              height: 130,
-              width: 130,
+              height: 150,
+              width: 150,
               decoration: BoxDecoration(
                   color: Colors.black, borderRadius: BorderRadius.circular(10)),
             ),
