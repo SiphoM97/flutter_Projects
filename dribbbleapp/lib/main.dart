@@ -60,7 +60,7 @@ class MyApp extends StatelessWidget {
                   padding: EdgeInsets.all(20),
                   margin: EdgeInsets.all(20),
                   child: Text(
-                    "Meal one",
+                    "Meal Three",
                     style: TextStyle(color: Colors.white),
                   ),
                   height: 170,
@@ -73,7 +73,7 @@ class MyApp extends StatelessWidget {
                   padding: EdgeInsets.all(20),
                   margin: EdgeInsets.all(20),
                   child: Text(
-                    "Meal two",
+                    "Meal four",
                     style: TextStyle(color: Colors.white),
                   ),
                   height: 170,
@@ -91,7 +91,7 @@ class MyApp extends StatelessWidget {
                   padding: EdgeInsets.all(20),
                   margin: EdgeInsets.all(20),
                   child: Text(
-                    "Meal one",
+                    "Meal five",
                     style: TextStyle(color: Colors.white),
                   ),
                   height: 170,
@@ -104,7 +104,7 @@ class MyApp extends StatelessWidget {
                   padding: EdgeInsets.all(20),
                   margin: EdgeInsets.all(20),
                   child: Text(
-                    "Meal two",
+                    "Meal six",
                     style: TextStyle(color: Colors.white),
                   ),
                   height: 170,
