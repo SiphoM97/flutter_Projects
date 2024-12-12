@@ -12,6 +12,7 @@ class _MainscreenState extends State<Mainscreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Bucket List")),
+      body: ElevatedButton(onPressed: () {}, child: Text("Get data")),
     );
   }
 }
