@@ -13,7 +13,7 @@ class _MainscreenState extends State<Mainscreen> {
     Response response = await Dio().get(
         "https://flutterapitest123-b32da-default-rtdb.firebaseio.com/bucketlist.json");
 
-    print(response);
+    print(response.data);
   }
 // get data from API
 
