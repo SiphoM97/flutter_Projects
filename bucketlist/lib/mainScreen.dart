@@ -10,10 +10,14 @@ class Mainscreen extends StatefulWidget {
 
 class _MainscreenState extends State<Mainscreen> {
   Future<void> getData() async {
-    Response response = await Dio().get(
-        "https://flutterapitest123-b32da-default-rtdb.firebaseio.com/bucketlist.json");
+    try {
+      Response response = await Dio().get(
+          "https://flutterapitest123-b32da-default-rtdb.firebaseio.com/bucketlist.json");
 
-    print(response.data);
+      print(response.data);
+    } catch (e) {
+      print("Invalid URL!");
+    }
   }
 // get data from API
 
