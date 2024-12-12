@@ -16,7 +16,14 @@ class _MainscreenState extends State<Mainscreen> {
 
       print(response.data);
     } catch (e) {
-      print("Invalid URL!");
+      showDialog = (
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: Text("Can not connect to server try again in few minutes!"),
+          );
+        }
+      );
     }
   }
 // get data from API
