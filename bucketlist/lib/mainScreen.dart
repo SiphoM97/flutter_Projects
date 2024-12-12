@@ -10,7 +10,7 @@ class Mainscreen extends StatefulWidget {
 
 class _MainscreenState extends State<Mainscreen> {
   Future<void> getData() async {
-    var response = Dio().get(
+    Response response = await Dio().get(
         "https://flutterapitest123-b32da-default-rtdb.firebaseio.com/bucketlist.json");
 
     print(response);
