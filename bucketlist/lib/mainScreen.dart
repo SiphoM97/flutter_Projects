@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
 class Mainscreen extends StatefulWidget {
@@ -8,11 +9,13 @@ class Mainscreen extends StatefulWidget {
 }
 
 class _MainscreenState extends State<Mainscreen> {
+  void getData() {}
+// get data from API
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Bucket List")),
-      body: ElevatedButton(onPressed: () {}, child: Text("Get data")),
+      body: ElevatedButton(onPressed: getData, child: Text("Get data")),
     );
   }
 }
