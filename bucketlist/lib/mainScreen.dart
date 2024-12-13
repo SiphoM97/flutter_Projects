@@ -16,7 +16,8 @@ class _MainscreenState extends State<Mainscreen> {
       Response response = await Dio().get(
           "https://flutterapitest123-b32da-default-rtdb.firebaseio.com/bucketlist.json");
 
-      print(response.data);
+      bucketListData = response.data;
+      setState(() {});
     } catch (e) {
       showDialog(
           context: context,
@@ -40,7 +41,7 @@ class _MainscreenState extends State<Mainscreen> {
             child: ListView.builder(
                 itemBuilder: (BuildContext context, int index) {
               return ListTile(
-                title: Text("Hey"),
+                title: Text("bro"),
               );
             }),
           )
