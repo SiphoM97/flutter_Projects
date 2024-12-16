@@ -13,6 +13,7 @@ class _MainscreenState extends State<Mainscreen> {
   bool isLoading = false;
 
   Future<void> getData() async {
+    isLoading = true;
     try {
       Response response = await Dio().get(
           "https://flutterapitest123-b32da-default-rtdb.firebaseio.com/bucketlist.json");
