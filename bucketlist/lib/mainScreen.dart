@@ -50,22 +50,28 @@ class _MainscreenState extends State<Mainscreen> {
               ))
         ],
       ),
-      body: ListView.builder(
-          itemCount: bucketListData.length,
-          itemBuilder: (BuildContext context, int index) {
-            return Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: ListTile(
-                leading: CircleAvatar(
-                  radius: 20,
-                  backgroundImage:
-                      NetworkImage(bucketListData[index]['Image'] ?? ""),
+      body: RefreshIndicator(
+        onRefresh: () async {
+          getData();
+        },
+        child: ListView.builder(
+            itemCount: bucketListData.length,
+            itemBuilder: (BuildContext context, int index) {
+              return Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ListTile(
+                  leading: CircleAvatar(
+                    radius: 20,
+                    backgroundImage:
+                        NetworkImage(bucketListData[index]['Image'] ?? ""),
+                  ),
+                  title: Text(bucketListData[index]['Item'] ?? ""),
+                  trailing:
+                      Text(bucketListData[index]['cost'].toString() ?? ""),
                 ),
-                title: Text(bucketListData[index]['Item'] ?? ""),
-                trailing: Text(bucketListData[index]['cost'].toString() ?? ""),
-              ),
-            );
-          }),
+              );
+            }),
+      ),
     );
   }
 }
