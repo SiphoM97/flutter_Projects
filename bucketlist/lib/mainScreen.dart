@@ -58,7 +58,7 @@ class _MainscreenState extends State<Mainscreen> {
           getData();
         },
         child: isLoading
-            ? CircularProgressIndicator()
+            ? LinearProgressIndicator()
             : ListView.builder(
                 itemCount: bucketListData.length,
                 itemBuilder: (BuildContext context, int index) {
