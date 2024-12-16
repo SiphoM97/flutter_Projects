@@ -33,20 +33,33 @@ class _MainscreenState extends State<Mainscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Bucket List")),
-      body: Column(
-        children: <Widget>[
-          ElevatedButton(onPressed: getData, child: Text("Get data")),
-          Expanded(
-            child: ListView.builder(
-                itemBuilder: (BuildContext context, int index) {
-              return ListTile(
-                title: Text("bro"),
-              );
-            }),
-          )
+      appBar: AppBar(
+        title: Text("Bucket List"),
+        actions: [
+          InkWell(
+              onTap: getData,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Icon(Icons.refresh),
+              ))
         ],
       ),
+      body: ListView.builder(
+          itemCount: bucketListData.length,
+          itemBuilder: (BuildContext context, int index) {
+            return Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 20,
+                  backgroundImage:
+                      NetworkImage(bucketListData[index]['Image'] ?? ""),
+                ),
+                title: Text(bucketListData[index]['Item'] ?? ""),
+                trailing: Text(bucketListData[index]['cost'].toString() ?? ""),
+              ),
+            );
+          }),
     );
   }
 }
