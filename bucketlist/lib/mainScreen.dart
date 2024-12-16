@@ -19,6 +19,7 @@ class _MainscreenState extends State<Mainscreen> {
           "https://flutterapitest123-b32da-default-rtdb.firebaseio.com/bucketlist.json");
 
       bucketListData = response.data;
+      isLoading = false;
       setState(() {});
     } catch (e) {
       showDialog(
