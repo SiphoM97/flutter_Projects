@@ -42,7 +42,11 @@ class _MainscreenState extends State<Mainscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(onPressed: (onPressed)),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        shape: CircleBorder(),
+        child: Icon(Icons.add),
+      ),
       appBar: AppBar(
         title: Text("Bucket List"),
         actions: [
