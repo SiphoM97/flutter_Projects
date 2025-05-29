@@ -44,14 +44,13 @@ class _MainscreenState extends State<Mainscreen> {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        shape: CircleBorder(),
+        shape: CircleBorder(wha),
         child: Icon(Icons.add),
       ),
       appBar: AppBar(
         title: Text("Bucket List"),
         actions: [
           InkWell(
-              onTap: getData,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Icon(Icons.refresh),
@@ -61,7 +60,7 @@ class _MainscreenState extends State<Mainscreen> {
       body: RefreshIndicator(
         onRefresh: () async {
           getData();
-        },
+        }
         child: isLoading
             ? LinearProgressIndicator()
             : ListView.builder(
